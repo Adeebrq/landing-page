@@ -56,19 +56,18 @@ export default function Home() {
               z-10 
               px-4 py-2 sm:px-6 sm:py-3
               rounded-full
-              bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600
               text-white font-semibold
               text-sm sm:text-base
-              shadow-inner shadow-orange-700/40
-              hover:shadow-orange-700/60
-              hover:scale-105
-              hover:from-orange-300 hover:via-orange-400 hover:to-orange-500
               active:scale-95
-              transition-all duration-300 ease-in-out
               transform
               -translate-y-4 sm:-translate-y-20 md:-translate-y-28
               mx-4
               max-w-xs sm:max-w-none
+               bg-gradient-to-b from-[#f95704] to-[#ff5500] 
+               hover:from-[#f95704] hover:to-[#ff5500]
+              transition-all duration-300 hover:scale-105
+              shadow-[inset_0_0_12px_0_rgb(251,203,47),inset_0_0_6px_0_rgba(229,178,88,1)]
+              hover:shadow-[inset_0_0_6px_0_rgb(251,203,47),inset_0_0_3px_0_rgba(229,178,88,1)]
             ${!targetUrl ? " pointer-events-none opacity-60" : " cursor-pointer"}`}
           >
             <span className="block sm:hidden">View Portfolio</span>
